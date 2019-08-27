@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Object</title>
+</head>
+<body>
+	<h1>JavaScript Object</h1>
+
+    <button onclick="myFunction()">Click Here</button>
+
+	<p id="disp"></p>
+
+	<script type="text/javascript">
+		function myFunction(){
+		var number = {2:Math.pow(2,2),3:Math.pow(3,2),4:Math.pow(4,2),5:Math.pow(5,2),6:Math.pow(6,2),7:Math.pow(7,2),8:Math.pow(8,2),9:Math.pow(9,2),10:Math.pow(10,2),11:Math.pow(11,2),12:Math.pow(12,2),13:Math.pow(13,2),14:Math.pow(14,2)}
+		var x = number[2] + "<br>" + number[3] + "<br>" + number[4] + "<br>" + number[5] + "<br>" + number[6] + "<br>" + number[7] + "<br>" + number[8] + "<br>" + number[9] + "<br>" + number[10] + "<br>" + number[11] + "<br>" + number[12] + "<br>" + number[13] + "<br>" + number[14]
+		document.getElementById("disp").innerHTML = x;
+	}
+	</script>
+
+</body>
+</html>

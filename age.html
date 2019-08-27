@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		Age Input 
+	</title> 
+</head> 
+
+<body style="text-align: center;"> 
+	<h1 style="color:green;"> 
+		Age Calculator
+	</h1> 
+	<p id="age"></p> 
+
+	<button onclick="myFunction()"> 
+		Click here 
+	</button> 
+
+	<script type="text/javascript"> 
+		function myFunction() { 
+            var y = prompt("Please enter your year of birth"); 
+            var x = 2019
+            var result = Number(x)-Number(y);
+            var group;
+
+		if (result < 18) {
+            group = "Your age is "+result+" you are a minor";
+        } else if(result >= 18 && result <= 36){
+            group = "Your age is  "+result+" you are a youth";
+        }else {
+            group = "Your age is "+result+" you are an elder";
+        }
+
+            document.getElementById("age").innerHTML = group;
+			}  
+	</script> 
+</body> 
+
+</html> 
